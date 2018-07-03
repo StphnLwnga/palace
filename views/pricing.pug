@@ -1,0 +1,61 @@
+extends layout
+
+block content
+	.container(id="carousel")
+		.carousel.slide(id="hostelpics" data-ride="carousel")
+			ul.carousel-indicators
+				li(class="active" data-target="#hostelpics" data-slide-to="0")
+				li(data-target="#hostelpics" data-slide-to="1")
+				li(data-target="#hostelpics" data-slide-to="2")
+				li(data-target="#hostelpics" data-slide-to="3")
+			.carousel-inner
+				.carousel-item.active
+					img.img-responsive(src="images/singe.jpg" alt="Single-Bed" width="1100" height="400")
+					.carousel-caption
+						h4 Decently Sized Rooms With Tiled Floors
+				.carousel-item
+					img.img-responsive(src="images/dfffff.jpg" alt="tv-room" width="1100" height="400")
+					.carousel-caption
+						h4 Digital TV Available
+				.carousel-item
+					img.img-responsive(src="images/kitchen.png" alt="fridge-microwave" width="900" height="400")
+					.carousel-caption
+						h4 Kitchen Appliances Provided
+				.carousel-item
+					img.img-responsive(src="images/2-Sharing.jpg" alt="2Sharing" width="1100" height="400")
+					.carousel-caption
+						h4 Comfortable Furnishing
+			a.carousel-control-prev(href="#hostelpics" data-slide="prev")
+				span.carousel-control-prev-icon
+			a.carousel-control-next(href="#hostelpics" data-slide="next")
+				span.carousel-control-next-icon
+				
+	.container(id="pricing")
+		.row.text-center
+			.col-xs-12.col-sm
+				h2.text-info Single
+				hr
+				p Single 4 X 6 bed
+				h3 Kshs. 20,000 p.m.
+			.col-xs-12.col-sm
+				h2.text-info 2 Sharing
+				hr
+				p 2 single 2 X 6 beds
+				h3 Kshs. 15,000 p.m.
+			.col-xs-12.col-sm
+				h2.text-info 2 Sharing
+				hr
+				p Double decker bed
+				h3 Kshs. 13,000 p.m.
+			.col-xs-12.col-sm
+				h2.text-info 4 Sharing
+				hr
+				p 2 double decker beds
+				h3 Kshs. 12,000 p.m.
+	
+	.container(id="register")
+		br
+		br
+		h4.text-center Registration fee - Kshs. 1,000. Refundable caution fee - Kshs. 5,000.
+		h6.text-center Breakfast & dinner provided everyday. Lunch on Saturdays and public holidays.
+		

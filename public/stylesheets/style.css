@@ -1,0 +1,148 @@
+body {
+/*  padding: 50px;*/
+	padding-top:56px;
+/*  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
+	background: linear-gradient(rgba(23,162,184,0), rgba(23,162,184,0.1))
+}
+
+.container, .top {
+	font-family: 'Questrial', sans-serif;
+}
+
+nav {
+	background: linear-gradient( rgba(23,162,184,0.4), rgba(23,162,184,0.4));
+}
+
+.palace {
+	font-family: 'Sacramento', cursive;
+	font-size:22px;
+	font-weight:500;
+	text-shadow: 1px 1px 2px rgba(23,162,184);
+}
+
+h1.palace {
+	font-size:58px;
+	font-weight:500;
+	text-shadow: 3px 3px 4px rgba(23,162,184);
+}
+
+a {
+  //color: #00B7FF;
+}
+
+#disp:before {
+	content: "";
+	position: absolute;
+  left: 0;
+  right: 0;
+  margin-top:0px;
+  z-index: -1;
+  display: center-block;
+  //background-image: url("/images/pillows.jpg");
+  //width: 2200px;
+  //height: 200px;
+  -webkit-filter: blur(7px);
+  -moz-filter: blur(7px);
+  -o-filter: blur(7px);
+  -ms-filter: blur(7px);
+  filter: blur(0px);
+}
+
+#disp { 
+	padding-left: 0px; 
+	padding-right: 0px;
+	margin: 0px;
+	width: 100%;
+	z-index: 0;
+	position: relative;
+	background: linear-gradient(to top, rgba(23,162,184,0), rgba(23,162,184,0.4));
+	border-radius:0px;
+}
+
+#jumbo-text {
+	width:60%;
+	-webkit-animation-name: jumbotron;
+  -webkit-animation-duration: 5s;
+  animation-name: jumbotron;
+  animation-duration: 5s;
+}
+
+@-webkit-keyframes jumbotron {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes jumbotron {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+#places {
+	width:70%;
+}
+
+.fa-youtube{
+	color:tomato;
+}
+
+.fas {
+	-webkit-animation-name: jumbotron;
+  -webkit-animation-duration: 5s;
+  animation-name: jumbotron;
+  animation-duration: 5s;
+}
+
+iframe {
+	border-radius:10px;
+	-webkit-animation-name: jumbotron;
+  -webkit-animation-duration: 5s;
+  animation-name: jumbotron;
+  animation-duration: 5s;
+}
+
+.embed-responsive {
+	box-shadow: 7px 7px 15px rgba(23,162,184, 0.4);
+	border-radius:7px;
+}
+
+#intro {
+	width:70%;
+}
+
+.carousel-inner {
+	border-radius:10px;
+}
+
+#carousel {
+	margin-top:50px;
+	width: 70%;
+	height:450px;
+	-webkit-animation-name: jumbotron;
+  -webkit-animation-duration: 5s;
+  animation-name: jumbotron;
+  animation-duration: 5s;
+}
+
+.carousel {
+	box-shadow: 7px 7px 15px rgba(23,162,184, 0.4);
+	background: linear-gradient(rgba(23,162,184,0), rgba(23,162,184,0.1));
+}
+
+.directions {
+	margin-top:50px;
+	width: 70%;
+	border-radius:10px;
+	-webkit-animation-name: jumbotron;
+  -webkit-animation-duration: 8s;
+  animation-name: jumbotron;
+  animation-duration: 8s;
+}
+
+.foot{
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+footer {
+	background: linear-gradient( rgba(23,162,184,0.3), rgba(23,162,184,0.4));
+}

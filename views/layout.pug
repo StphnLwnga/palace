@@ -1,0 +1,51 @@
+doctype html
+html
+	head
+		title= `${title} | Palace Ladies Hostels`
+		link(rel='stylesheet', href='stylesheets/style.css')
+		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm', crossorigin='anonymous')
+		link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.0.13/css/all.css', integrity='sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp' crossorigin='anonymous')
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Montserrat+Alternates|Parisienne|Rochester|Sacramento|Arimo|Muli|Play|Poppins|Questrial|Quicksand|Roboto|Rokkitt")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		
+	body
+		block header
+			nav.navbar.navbar-expand-lg.navbar-dark.fixed-top
+				a.navbar-brand(href='/').palace.text-dark Palace Ladies Hostels
+				button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+					span.navbar-toggler-icon
+					
+				.collapse.navbar-collapse(id="navbarSupportedContent")
+					ul.navbar-nav
+						- const categories = ['Pricing','Directions']
+						each category in categories
+							li.nav-item
+								a.nav-link.text-secondary.top(href=`/${category.toLowerCase()}`) #{category}
+  
+  
+		block content
+
+		br
+		br
+		.container
+			.text-center
+				i.fas.fa-mobile-alt.text-info 
+				span   0726 933 724       
+				i.fas.fa-envelope.text-info
+				span   hostelspalace@gmail.com
+		
+		block footer    
+			footer.footer
+				.container
+					.pull-center.text-center.text-dark.foot 
+						span.palace Palace Ladies Hostels
+						span   #{(new Date().getFullYear() > 2018) ? 2018 - new Date().getFullYear() : new Date().getFullYear()}
+      
+      
+		block scripts
+			script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
+			script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q', crossorigin='anonymous')
+			script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', crossorigin='anonymous')
+			script(src=`https://maps.googleapis.com/maps/api/js?key=${process.env.MAP_KEY}&libraries=places`)
+
+

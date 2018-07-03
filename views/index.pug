@@ -1,0 +1,46 @@
+extends layout
+
+block content
+	.jumbotron(id="disp")
+		.container-fluid(id="jumbo-text")
+			.page-header
+				h1.text-center.palace.text-dark Palace Ladies Hostels
+				hr
+				p.text-center.top Home Sweet Home
+				
+	.container(id="intro")
+		p.text-center 
+			span Affordable accomodation conveniently located in Nyayo Highrise, off Mbagathi Way. Within walking distance of Riara University and Strathmore University,
+			span  Palace Ladies Hostels 
+			span offers first-rate services to make your stay with us as pleasant as possible.
+		br
+		.row.text-center
+			.col-xs-4.col-sm.text-center
+				h4
+					i(class=`fas fa-clock fa-2x text-info`)
+				p 24-Hour security & matron
+			.col-xs-4.col-sm.text-center
+				h4
+					i(class=`fas fa-utensils fa-2x text-info`)
+				p Meals provided
+			.col-xs-4.col-sm.text-center
+				h4
+					i(class=`fas fa-wifi fa-2x text-info`)
+				p WiFi
+			.col-xs-4.col-sm.text-center
+				h4
+					i(class=`fas fa-bed fa-2x text-info`)
+				p Furnished rooms
+			.col-xs-4.col-sm.text-center
+				h4
+					i(class=`fas fa-shower fa-2x text-info`)
+				p Hot water
+				
+	.container(id="places")
+		.embed-responsive.embed-responsive-21by9.container-fluid.d-none.d-sm-block(id="showcase")
+			iframe.embed-responsive-item(src="https://www.youtube.com/embed/Coc6J1Lsyrg?rel=0&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
+		.d-block.d-sm-none(id="showcase")
+			p.text-center Take a tour of the facilities
+			p.text-center
+				a(href="https://www.youtube.com/watch?time_continue=114&v=Coc6J1Lsyrg")
+					i.fab.fa-youtube.fa-7x
