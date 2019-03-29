@@ -13,7 +13,7 @@ html
 	body
 		block header
 			nav.navbar.navbar-expand-lg.navbar-dark.fixed-top
-				a.navbar-brand(href='/').palace.text-dark.wow.fadeInLeft(data-wow-delay="250ms" data-wow-duration="850ms") Palace Ladies Hostels
+				a.navbar-brand(href='/').palace.text-dark.wow.fadeInLeft(data-wow-delay="150ms" data-wow-duration="850ms") Palace Ladies Hostels
 				button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
 					span.navbar-toggler-icon
 					
@@ -22,7 +22,7 @@ html
 						- const categories = ['Pricing','Directions']
 						each category in categories
 							li.nav-item
-								a.nav-link.text-secondary.top(href=`/${category.toLowerCase()}`) #{category}
+								a.nav-link.text-secondary.top.wow.fadeInDown(data-wow-duration="850ms" href=`/${category.toLowerCase()}`) #{category}
   
   
 		block content
@@ -30,7 +30,7 @@ html
 		br
 		br
 		.container
-			.text-center
+			.text-center.wow.jackInTheBox(data-wow-delay="600ms")
 				i.fas.fa-mobile-alt.text-info 
 				span   0726 933 724       
 				i.fas.fa-envelope.text-info
