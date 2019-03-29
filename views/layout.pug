@@ -6,12 +6,14 @@ html
 		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm', crossorigin='anonymous')
 		link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.0.13/css/all.css', integrity='sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp' crossorigin='anonymous')
 		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Montserrat+Alternates|Parisienne|Rochester|Sacramento|Arimo|Muli|Play|Poppins|Questrial|Quicksand|Roboto|Rokkitt")
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css")
+		
 		meta(name="viewport" content="width=device-width, initial-scale=1")
 		
 	body
 		block header
 			nav.navbar.navbar-expand-lg.navbar-dark.fixed-top
-				a.navbar-brand(href='/').palace.text-dark Palace Ladies Hostels
+				a.navbar-brand(href='/').palace.text-dark.wow.fadeInLeft(data-wow-delay="250ms" data-wow-duration="850ms") Palace Ladies Hostels
 				button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
 					span.navbar-toggler-icon
 					
@@ -47,5 +49,6 @@ html
 			script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q', crossorigin='anonymous')
 			script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', crossorigin='anonymous')
 			script(src=`https://maps.googleapis.com/maps/api/js?key=${process.env.MAP_KEY}&libraries=places`)
+			script(src='https://cdnjs.cloudflare.com/ajax/libs/graingert-wow/1.2.2/wow.min.js')
 
 
