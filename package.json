@@ -5,9 +5,7 @@
   "scripts": {
     "start": "node ./bin/www"
   },
-  "now": {
-  	"dotenv": "variables.env.now"
-  },
+  ,
   "dependencies": {
     "body-parser": "^1.18.3",
     "bootstrap": "^4.1.1",
