@@ -1,4 +1,5 @@
 {
   "name": "palaceladieshostels",
-  "version": 1
+  "version": 1,
+  "alias": "palace-hostels.vercel.app"
 }
